@@ -1,15 +1,15 @@
 if (not _G.Flags) then
 	_G.Flags = {
 		ESP = {
-			NotVisibleColor = Color3.fromRGB(255,0,0);
-			VisibleColor = Color3.fromRGB(0,255,0);	
+			NotVisibleColor = Color3.fromRGB(255,255,255);
+			VisibleColor = Color3.fromRGB(255,255,255);	
 			DistanceLimit = 1500;
 			Box = false;
 			Name = false;
-			Weapon = false;
-			Distance = false;
+			Weapon = true;
+			Distance = true;
 			VisibleCheck = false;
-			Sleepers = false;
+			Sleepers = true;
 		};
 		HitboxExpander = {
 			Size = 3.9;
@@ -111,7 +111,7 @@ for i,v in pairs(ReplicatedStorage.Shared.entities.Player.Model:GetChildren()) d
 		PlayerWeapon.Size = UDim2.new(0, 100, 0, 10)
 		PlayerWeapon.Font = Enum.Font.SourceSans
 		PlayerWeapon.Text = "Weapon"
-		PlayerWeapon.TextColor3 = Color3.fromRGB(0, 255, 8)
+		PlayerWeapon.TextColor3 = Color3.fromRGB(255, 255, 255)
 		PlayerWeapon.TextSize = 14.000
 		PlayerWeapon.TextXAlignment = Enum.TextXAlignment.Left
 		PlayerWeapon.TextYAlignment = Enum.TextYAlignment.Bottom
@@ -128,7 +128,7 @@ for i,v in pairs(ReplicatedStorage.Shared.entities.Player.Model:GetChildren()) d
 		PlayerDistance.Size = UDim2.new(0, 100, 0, 10)
 		PlayerDistance.Font = Enum.Font.SourceSans
 		PlayerDistance.Text = "500"
-		PlayerDistance.TextColor3 = Color3.fromRGB(0, 255, 8)
+		PlayerDistance.TextColor3 = Color3.fromRGB(255, 255, 255)
 		PlayerDistance.TextSize = 14.000
 		PlayerDistance.TextYAlignment = Enum.TextYAlignment.Bottom
 
